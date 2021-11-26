@@ -1,10 +1,10 @@
 import './index.css'
 
 const FailureView = props => {
-  const {getRestaurantList} = props
+  const {getUserData} = props
 
   const onClickRetry = () => {
-    getRestaurantList()
+    getUserData()
   }
 
   return (
