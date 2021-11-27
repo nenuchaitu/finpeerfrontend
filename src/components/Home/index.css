@@ -29,3 +29,12 @@
   align-items: center;
   min-height: 90vh;
 }
+.user-files-list {
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-top: 30px;
+  list-style-type: none;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}

@@ -6,6 +6,7 @@ import Loader from 'react-loader-spinner'
 
 import Header from '../Header'
 import FailureView from '../FailureView'
+import UserFilesListItem from '../UserFilesListItem'
 
 import './index.css'
 
@@ -51,7 +52,16 @@ class Home extends Component {
 
   renderUserFilesListView = () => {
     const {userFilesList} = this.state
-    return <div>List</div>
+    return (
+      <>
+        <h1 className="user-files-heading">My Files</h1>
+        <ul className="user-files-list">
+          {userFilesList.map(file => (
+            <UserFilesListItem data={file} key={file.id} />
+          ))}
+        </ul>
+      </>
+    )
   }
 
   renderLoadingView = () => (

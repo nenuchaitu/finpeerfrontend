@@ -20,7 +20,7 @@ class Header extends Component {
 
   onClickLogout = () => {
     const {history} = this.props
-    Cookies.remove('jwt_token')
+    Cookies.remove('user')
     history.replace('/login')
   }
 
